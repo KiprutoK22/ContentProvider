@@ -3,14 +3,7 @@ package com.example.contentprovider
 import android.net.Uri
 
 object Contract {
-    /**
-     * The content URI needs the following structure:
-     * * scheme (or content URIs, this is always content://)
-     * * authority (this represents the domain)
-     * * path (this represents the path to the page)
-     * * ID (this is the name of the file/table, unique within the namespace)
-     *
-     */
+
     // Customarily, to make Authority unique, it's the package name extended with "provider".
     // Must match with the authority defined in Android Manifest.
     const val AUTHORITY = "com.android.example.wordcontentprovioder.provider"
