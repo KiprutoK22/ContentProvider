@@ -31,17 +31,11 @@ class MainActivity : AppCompatActivity() {
 
         // URI That identifies the content provider and the table.
         val queryUri: String = Contract.CONTENT_URI.toString()
-
         val projection = arrayOf(Contract.CONTENT_PATH) // Only get words.
-
         val selectionClause: String?
-
-        // Argument values for the selection criteria.
-
         val selectionArgs: Array<String>?
 
         // The order in which to sort the results.
-        // Formatted as an SQL ORDER BY clause (excluding the ORDER BY keyword).
         val sortOrder: String? =
             null // For this example, we accept the order returned by the response.
         when (view.id) {
@@ -76,12 +70,12 @@ class MainActivity : AppCompatActivity() {
                 } while (cursor.moveToNext())
             } else {
                 Log.d(TAG, "onClickDisplayEntries")
-                mTextView!!.append("No data returned")
+                mTextView!!.append("No data returned.\n")
             }
             cursor.close()
         } else {
             Log.d(TAG, "onClickDisplayEntries")
-            mTextView!!.append("Cursor is null"
+            mTextView!!.append("Cursor is null.\n"
             )
         }
     }
