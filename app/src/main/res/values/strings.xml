@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">ContentProvider</string>
-    <string name="response">response</string>
+    <string name="Response: \n">response</string>
     <string name="list_all_words">list_all_words</string>
     <string name="list_first_word">list_first_word</string>
 
